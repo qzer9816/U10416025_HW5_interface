@@ -13,7 +13,7 @@ import javafx.scene.shape.Ellipse;
 public class BeanGame extends Application {
     @Override
    	public void start(Stage primaryStage) {
-   	//新增介面
+   		//新增面版
 		Pane pane = new Pane();
 		Polyline polyline = new Polyline();
 		//顯示線
@@ -176,4 +176,10 @@ public class BeanGame extends Application {
 		//顯示點
 		pane.getChildren().addAll(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,
 			e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28);
+		
+		//設定介面大小及標題
+		Scene scene = new Scene(pane, 200 , 250 );
+       		primaryStage.setScene(scene);
+      		primaryStage.setTitle("Bean Game");
+        	primaryStage.show();
 }
