@@ -16,6 +16,7 @@ public class BeanGame extends Application {
    	//新增介面
 		Pane pane = new Pane();
 		Polyline polyline = new Polyline();
+		//顯示線
 		pane.getChildren().add(polyline);
 		//設定線連接的點
 		ObservableList<Double> list = polyline.getPoints();
@@ -86,4 +87,93 @@ public class BeanGame extends Application {
 
 		list.add(110.0);
 		list.add(35.0);
+		
+		//新增彈珠台中的點
+		Ellipse e1 = new Ellipse(40,165,3,3);
+		e1.setFill(Color.BLACK);
+
+		Ellipse e2 = new Ellipse(60,165,3,3);
+		e2.setFill(Color.BLACK);
+
+		Ellipse e3 = new Ellipse(80,165,3,3);
+		e3.setFill(Color.BLACK);
+
+		Ellipse e4 = new Ellipse(100,165,3,3);
+		e4.setFill(Color.BLACK);		
+
+		Ellipse e5 = new Ellipse(120,165,3,3);
+		e5.setFill(Color.BLACK);
+
+		Ellipse e6 = new Ellipse(140,165,3,3);
+		e6.setFill(Color.BLACK);
+
+		Ellipse e7 = new Ellipse(160,165,3,3);
+		e7.setFill(Color.BLACK);
+
+		Ellipse e8 = new Ellipse(50,150,3,3);
+		e8.setFill(Color.BLACK);
+
+		Ellipse e9 = new Ellipse(70,150,3,3);
+		e9.setFill(Color.BLACK);
+
+		Ellipse e10 = new Ellipse(90,150,3,3);
+		e10.setFill(Color.BLACK);
+
+		Ellipse e11 = new Ellipse(110,150,3,3);
+		e11.setFill(Color.BLACK);
+
+		Ellipse e12 = new Ellipse(130,150,3,3);
+		e12.setFill(Color.BLACK);
+
+		Ellipse e13 = new Ellipse(150,150,3,3);
+		e13.setFill(Color.BLACK);
+
+		Ellipse e14 = new Ellipse(60,135,3,3);
+		e14.setFill(Color.BLACK);
+
+		Ellipse e15 = new Ellipse(80,135,3,3);
+		e15.setFill(Color.BLACK);
+
+		Ellipse e16 = new Ellipse(100,135,3,3);
+		e16.setFill(Color.BLACK);
+
+		Ellipse e17 = new Ellipse(120,135,3,3);
+		e17.setFill(Color.BLACK);
+
+		Ellipse e18 = new Ellipse(140,135,3,3);
+		e18.setFill(Color.BLACK);
+
+		Ellipse e19 = new Ellipse(70,120,3,3);
+		e19.setFill(Color.BLACK);
+
+		Ellipse e20 = new Ellipse(90,120,3,3);
+		e20.setFill(Color.BLACK);
+
+		Ellipse e21 = new Ellipse(110,120,3,3);
+		e21.setFill(Color.BLACK);
+
+		Ellipse e22 = new Ellipse(130,120,3,3);
+		e22.setFill(Color.BLACK);
+
+		Ellipse e23 = new Ellipse(80,105,3,3);
+		e23.setFill(Color.BLACK);
+
+		Ellipse e24 = new Ellipse(100,105,3,3);
+		e24.setFill(Color.BLACK);
+
+		Ellipse e25 = new Ellipse(120,105,3,3);
+		e25.setFill(Color.BLACK);
+
+		Ellipse e26 = new Ellipse(90,90,3,3);
+		e26.setFill(Color.BLACK);
+
+		Ellipse e27 = new Ellipse(110,90,3,3);
+		e27.setFill(Color.BLACK);
+
+		Ellipse e28 = new Ellipse(100,75,3,3);
+		e28.setFill(Color.BLACK);
+		
+		//顯示點
+		pane.getChildren().addAll(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,
+			e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28);
 }
