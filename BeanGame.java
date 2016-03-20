@@ -1,4 +1,4 @@
-//U10416025 張詠淳
+//U10416025
 
 import javafx.application.Application;
 import javafx.collections.ObservableList;
@@ -13,12 +13,12 @@ import javafx.scene.shape.Ellipse;
 public class BeanGame extends Application {
     @Override
    	public void start(Stage primaryStage) {
-   		//新增面版
+   		//new pane
 		Pane pane = new Pane();
 		Polyline polyline = new Polyline();
-		//顯示線
+		//get line
 		pane.getChildren().add(polyline);
-		//設定線連接的點
+		//set the dots of lines
 		ObservableList<Double> list = polyline.getPoints();
 	
 		list.add(90.0);
@@ -88,7 +88,7 @@ public class BeanGame extends Application {
 		list.add(110.0);
 		list.add(35.0);
 		
-		//新增彈珠台中的點
+		//add the dots of bean game
 		Ellipse e1 = new Ellipse(40,165,3,3);
 		e1.setFill(Color.BLACK);
 
@@ -173,11 +173,11 @@ public class BeanGame extends Application {
 		Ellipse e28 = new Ellipse(100,75,3,3);
 		e28.setFill(Color.BLACK);
 		
-		//顯示點
+		//get the dots of bean game
 		pane.getChildren().addAll(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,
 			e17,e18,e19,e20,e21,e22,e23,e24,e25,e26,e27,e28);
 		
-		//設定介面大小及標題
+		//set scene and title
 		Scene scene = new Scene(pane, 200 , 250 );
        		primaryStage.setScene(scene);
       		primaryStage.setTitle("Bean Game");
